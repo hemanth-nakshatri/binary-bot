@@ -125,7 +125,11 @@ FUTURE_PERIOD_PREDICT = 2  # how far into the future are we trying to predict , 
 NAME = train_data() + '.model'
 model = tf.keras.models.load_model(f'models/{NAME}')
 
-iq = login()
+print("Enter Username")
+username = input()
+print("Enter password")
+password = input()
+iq = login(username, password)
 
 i = 0
 bid = True
