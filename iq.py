@@ -18,7 +18,7 @@ def login(verbose = False, iq = None, checkConnection = False):
 
     if iq == None:
       print("Trying to connect to IqOption")
-      iq=IQ_Option('USERNAME','PASSWORD') # YOU HAVE TO ADD YOUR USERNAME AND PASSWORD
+      iq=IQ_Option('hemans992@gmail.com','Batman1999!') # YOU HAVE TO ADD YOUR USERNAME AND PASSWORD
       iq.connect()
 
     if iq != None:
