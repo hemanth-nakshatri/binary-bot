@@ -85,7 +85,7 @@ def preprocess_df(df):
 
 
 def train_data():
-    iq = login()
+    iq = login(username, password)
         
     #actives = ['EURUSD','GBPUSD','EURJPY','AUDUSD']
     
