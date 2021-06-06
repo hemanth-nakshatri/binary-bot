@@ -11,14 +11,14 @@ from iqoptionapi.stable_api import IQ_Option
 import pandas as pd
 
 
-def login(verbose = False, iq = None, checkConnection = False):
+def login(username, password, verbose = False, iq = None, checkConnection = False):
     
     if verbose:
         logging.basicConfig(level=logging.DEBUG,format='%(asctime)s %(message)s')
 
     if iq == None:
       print("Trying to connect to IqOption")
-      iq=IQ_Option('hemans992@gmail.com','Batman1999!') # YOU HAVE TO ADD YOUR USERNAME AND PASSWORD
+      iq=IQ_Option(username, password) # YOU HAVE TO ADD YOUR USERNAME AND PASSWORD
       iq.connect()
 
     if iq != None:
